@@ -48,6 +48,14 @@ See the full methodology in the paper or in the `figures/` diagrams.
 2. Run the evaluation script above.
 3. Inspect the printed JSON or open `notebooks/Reproduce_SPS.ipynb` for a walkthrough.
 
+## Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines. Please read the [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) before participating.
+
+## Security
+
+If you discover a security vulnerability, please report it privately following [`SECURITY.md`](SECURITY.md).
+
 ## Citation
 
 If you use this framework or dataset in your own work, please cite the Zenodo working paper.
