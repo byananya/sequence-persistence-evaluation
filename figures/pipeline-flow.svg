@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420" height="640" viewBox="0 0 420 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="p-arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2c1a0e"/>
+    </marker>
+  </defs>
+
+  <rect width="420" height="640" fill="#f5f0e8"/>
+
+  <!-- Input -->
+  <rect x="60" y="30" width="300" height="60" rx="10" fill="#fff" stroke="#6b1414" stroke-width="2"/>
+  <text x="210" y="55" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#2c1a0e" text-anchor="middle">Static photo + Script</text>
+  <text x="210" y="75" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#7a5c3a" text-anchor="middle">source identity asset</text>
+
+  <line x1="210" y1="90" x2="210" y2="120" stroke="#2c1a0e" stroke-width="2" marker-end="url(#p-arrow)"/>
+
+  <!-- Stage 1 -->
+  <rect x="60" y="120" width="300" height="80" rx="10" fill="#fff" stroke="#6b1414" stroke-width="2"/>
+  <text x="210" y="150" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#2c1a0e" text-anchor="middle">[1] Text-to-speech</text>
+  <text x="210" y="175" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#7a5c3a" text-anchor="middle">edge-tts → audio</text>
+
+  <line x1="210" y1="200" x2="210" y2="230" stroke="#2c1a0e" stroke-width="2" marker-end="url(#p-arrow)"/>
+
+  <!-- Stage 2 -->
+  <rect x="60" y="230" width="300" height="80" rx="10" fill="#fff" stroke="#6b1414" stroke-width="2"/>
+  <text x="210" y="260" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#2c1a0e" text-anchor="middle">[2] Kling AI v1.6</text>
+  <text x="210" y="285" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#7a5c3a" text-anchor="middle">image-to-video body motion</text>
+
+  <line x1="210" y1="310" x2="210" y2="340" stroke="#2c1a0e" stroke-width="2" marker-end="url(#p-arrow)"/>
+
+  <!-- Stage 3 -->
+  <rect x="60" y="340" width="300" height="80" rx="10" fill="#fff" stroke="#6b1414" stroke-width="2"/>
+  <text x="210" y="370" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#2c1a0e" text-anchor="middle">[3] Lip sync</text>
+  <text x="210" y="395" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#7a5c3a" text-anchor="middle">fal-ai sync-lipsync / LatentSync</text>
+
+  <line x1="210" y1="420" x2="210" y2="450" stroke="#2c1a0e" stroke-width="2" marker-end="url(#p-arrow)"/>
+
+  <!-- Stage 4 -->
+  <rect x="60" y="450" width="300" height="80" rx="10" fill="#fff" stroke="#6b1414" stroke-width="2"/>
+  <text x="210" y="480" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#2c1a0e" text-anchor="middle">[4] Local enhancement</text>
+  <text x="210" y="505" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#7a5c3a" text-anchor="middle">motion interpolation + sharpening</text>
+
+  <line x1="210" y1="530" x2="210" y2="560" stroke="#2c1a0e" stroke-width="2" marker-end="url(#p-arrow)"/>
+
+  <!-- Output -->
+  <rect x="60" y="560" width="300" height="60" rx="10" fill="#7a8c5a" stroke="#5a6b44" stroke-width="2"/>
+  <text x="210" y="590" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">Final MP4</text>
+</svg>
