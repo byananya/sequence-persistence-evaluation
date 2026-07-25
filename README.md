@@ -40,6 +40,14 @@ A sequence passes only if the sender remains recognisably the same across all mo
 | **Style persistence** | Distance in background / lighting / colour-grade features between outputs | within same cluster |
 | **Sequence Persistence Score (SPS)** | Weighted combination of face and style consistency across the full sequence | > 0.70 |
 
+### Why these thresholds
+
+- **Embedding model:** Face embeddings are extracted with **InsightFace `buffalo_l`**. Different models produce different cosine-similarity ranges, so naming the model is required for reproducibility.
+- **Face-persistence threshold (0.65):** This is an initial decision boundary placed between the same-person and different-person embedding-similarity distributions. It is a v1 heuristic; multi-subject calibration is deferred to v1.1.
+- **SPS threshold (0.70):** A sequence passes when the weighted combination of face and style persistence crosses this boundary.
+- **Weights (0.60 face / 0.40 style):** Identity inconsistency is the dominant failure mode for outbound trust, while style drift is tolerated within bounds. The 60/40 weighting reflects that priority.
+- **Scope:** The current sample validates the metric on one consented founder identity across a small set of sequences. Multi-subject calibration is deferred to v1.1.
+
 See the full methodology in the paper or in the `figures/` diagrams.
 
 ## Reproducing the evaluation
