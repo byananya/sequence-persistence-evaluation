@@ -56,6 +56,18 @@ See the full methodology in the paper or in the `figures/` diagrams.
 2. Run the evaluation script above.
 3. Inspect the printed JSON or open `notebooks/Reproduce_SPS.ipynb` for a walkthrough.
 
+## Threshold calibration
+
+`eval/calibrate_threshold.py` measures the similarity distributions used to place the face-persistence threshold.
+
+- `--source` — the portrait the sequence was generated from.
+- `--outputs` — directory of generated clips for one sequence.
+- `--negatives` — portraits of different people, one image each.
+
+Reports n, mean, std, min, and max for three sets: source-to-output, output-to-output, and negative. Computes d′ between the positive and negative distributions, and sweeps the face weight from 0.5 to 0.8 to show whether any pass/fail verdict flips. Raw per-pair similarities are written to `results/calibration.csv`.
+
+**Use at least 30 distinct negative identities.** Below roughly 20, the standard deviation is too unstable to place a threshold, and a single negative pair produces a meaningless d′.
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines. Please read the [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) before participating.
