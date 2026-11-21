@@ -1,5 +1,7 @@
 # Sequence Persistence Evaluation
 
+Status: research release (v1), archived. This repository is the reference implementation for the working paper below and is kept unchanged so the paper's results stay reproducible. It is no longer developed. Pulse AI's verification product uses a separate, private implementation; results from this repository are not clearance results.
+
 A standardized evaluation framework for measuring identity consistency across AI-generated video sequences, introduced in the PulseAI working paper:
 
 > Ananya Das. (2026). *Identity Persistence in AI-Generated Video: A Sequence Evaluation Framework for Founder-Led Outbound*. PulseAI Working Paper. Zenodo. (https://doi.org/10.5281/zenodo.21620531)
